@@ -6,11 +6,12 @@ function NavBar() {
   const styles = {};
   styles.navBar = {
     display: "flex",
-    position: "fixed",
-    height: "5rem",
+    position: "sticky",
+    top: 0,
+    height: "75px",
     width: "100%",
-    boxShadow: "2px 1px 2px 1px rgba(0, 0, 0, 0.2)",
     justifyContent: "center",
+    boxShadow: "2px 1px 2px 1px rgba(0, 0, 0, 0.2)",
     backgroundColor: "#ffffffc0",
     backdropFilter: "blur(10px)",
   };
@@ -23,6 +24,8 @@ function NavBar() {
   };
   styles.ul2 = {
     ...styles.ul,
+    width: "50%",
+
     justifyContent: "space-evenly",
   };
   styles.logo = {
