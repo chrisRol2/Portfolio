@@ -1,0 +1,66 @@
+{
+  "Pes": [
+    {
+      "name": "Agencia Luma",
+      "description": "Aplicación de una sola página, Multi idioma y para agencia de marketing digital",
+      "url": "https://lot-tido.com",
+      "img": "lumaLogo.png"
+    },
+    {
+      "name": "Caja de herramientas Rolgus",
+      "description": "Aplicación de una sola página, destinada a calcular coordenadas de minecraft, manejar usuarios(en desarrollo)",
+      "url": "https://rolgus.com",
+      "img": "rolgusLogo.png"
+    },
+    {
+      "name": "Portafolio",
+      "description": "Esta pagina donde estas, diseño moderno y minimalista, destinado a mostrar mis proyectos y ofrecer mis servicios",
+      "url": "https://chrisrol.xyz",
+      "img": "miniaturaPortfolio.png"
+    },
+    {
+      "name": "Cronometro",
+      "description": "Cronometro temporizador para mantener sesiones de trabajo organizadas y sin distracciones!",
+      "url": "https://",
+      "img": "Cronometro.png"
+    },
+    {
+      "name": "Portfolio legacy",
+      "description": "Mi primer portafolio :3",
+      "url": "https://legacy.chrisrol.xyz",
+      "img": "legacy.png"
+    }
+  ],
+  "Pen": [
+    {
+      "name": "Agencia Luma",
+      "description": "Aplicación de una sola página, Multi idioma y para agencia de marketing digital",
+      "url": "https://",
+      "img": "lumaLogo.png"
+    },
+    {
+      "name": "Caja de herramientas Rolgus",
+      "description": "Aplicación de una sola página, destinada a calcular coordenadas de minecraft, manejar usuarios(en desarrollo)",
+      "url": "https://rolgus.com",
+      "img": "rolgusLogo.png"
+    },
+    {
+      "name": "Portafolio",
+      "description": "Esta pagina donde estas, diseño moderno y minimalista, destinado a mostrar mis proyectos y ofrecer mis servicios",
+      "url": "https://chrisrol.xyz",
+      "img": "miniaturaPortfolio.png"
+    },
+    {
+      "name": "Cronometro",
+      "description": "Cronometro temporizador para mantener sesiones de trabajo organizadas y sin distracciones!",
+      "url": "https://",
+      "img": "Cronometro.png"
+    },
+    {
+      "name": "Portfolio legacy",
+      "description": "Mi primer portafolio :3",
+      "url": "https://legacy.chrisrol.xyz",
+      "img": "legacy.png"
+    }
+  ]
+}
