@@ -1,34 +1,41 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
-import "./Styles/Home.scss";
 import faceImg from "../Images/MarcaColor.png";
 import LanguageContext from "../Context/LangContext";
 
+const HomeContainer = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  width: 90%;
+  display: flex;
+  /* padding-top: 75px; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+`;
+const DescriptionP = styled.p`
+  margin-top: 2%;
+  width: 80%;
+  font-size: 1.2rem;
+`;
+const Img = styled.img`
+  margin-bottom: 5%;
+  /* margin-top: 5%; */
+  width: 400px;
+`;
+const H1 = styled.h1`
+  font-size: 2.8rem;
+`;
+
 function Home() {
   const { text } = useContext(LanguageContext);
-  const styles = {};
-  styles.about__p = {
-    marginTop: "2%",
-    width: "80%",
-    fontSize: "1.2rem",
-  };
-  styles.title = {
-    // fontSize: "calc(1rem + 2.8vw)",
-    fontSize: "2.8rem",
-  };
-
-  const DescriptionP = styled.p`
-    margin-top: 2%;
-    width: 80%;
-    font-size: 1.2rem;
-  `;
-
   return (
-    <div id="home__container">
-      <img src={faceImg} alt="Imagen" />
-      <h1 style={styles.title}>FrontEnd Development</h1>
+    <HomeContainer id="home__container">
+      <Img src={faceImg} alt="Imagen" />
+      <H1>FrontEnd Development</H1>
       <DescriptionP className="text-center">{text.description}</DescriptionP>
-    </div>
+    </HomeContainer>
   );
 }
 
