@@ -10,6 +10,7 @@ import NavBar from "./Components/NavBar";
 //Contexts
 import { LangProvider } from "./Context/LangContext";
 import { MenuProvider } from "./Context/MenuContext";
+import Projects from "./Pages/Projects";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
           <Route exact path="/" component={Home} />
         </Switch>
       </Router>
-
+      <Projects />
       {/* <Footer /> */}
     </LangProvider>
   );
