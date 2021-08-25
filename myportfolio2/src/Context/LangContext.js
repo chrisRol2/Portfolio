@@ -1,5 +1,6 @@
 import { useState, createContext, useEffect } from "react";
 import { es, en } from "../API/lang.json";
+import { Pes, Pen } from "../API/Projects.json";
 
 const LanguageContext = createContext();
 
@@ -14,6 +15,7 @@ const LangProvider = ({ children }) => {
     lang,
     setLang,
     text: lang === "en" ? en : es,
+    pText: lang === "en" ? Pen : Pes,
   };
 
   useEffect(() => {
