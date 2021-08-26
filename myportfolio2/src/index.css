@@ -5,6 +5,8 @@
   padding: 0;
   font-weight: 700;
   user-select: none;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 a {
   text-decoration: none;
@@ -13,4 +15,24 @@ a {
 
 li {
   list-style-type: none;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+  border-radius: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 4px;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  border: 1px solid #000;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #f7f7f7;
+}
+*::-webkit-scrollbar-thumb:active {
+  background-color: #3de2fc18;
 }
