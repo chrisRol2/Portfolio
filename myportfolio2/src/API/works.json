@@ -1,0 +1,46 @@
+{
+  "tecno": [
+    {
+      "id": 10,
+      "name": "React",
+      "icon": "react"
+    },
+    {
+      "id": 11,
+      "name": "JavaScript",
+      "icon": "javascript"
+    },
+    {
+      "id": 12,
+      "name": "HTML 5",
+      "icon": "html5"
+    },
+    {
+      "id": 13,
+      "name": "CSS 3",
+      "icon": "css3"
+    },
+    {
+      "id": 14,
+      "name": "Node",
+      "icon": "nodejs"
+    }
+  ],
+  "tools": [
+    {
+      "id": 15,
+      "name": "Git/GitHub",
+      "icon": "git"
+    },
+    {
+      "id": 16,
+      "name": "Figma",
+      "icon": "figma"
+    },
+    {
+      "id": 17,
+      "name": "Docker",
+      "icon": "docker"
+    }
+  ]
+}
