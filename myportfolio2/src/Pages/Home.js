@@ -6,26 +6,48 @@ import LanguageContext from "../Context/LangContext";
 const HomeContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
-  height: 100vh;
+  /* height: 100vh; */
   width: 90%;
   display: flex;
-  /* padding-top: 75px; */
+  flex-direction: row;
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  padding-top: 75px;
+
+  @media (max-width: 853px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+const TextContainer = styled.article`
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 `;
 const DescriptionP = styled.p`
   margin-top: 2%;
   width: 80%;
   font-size: 1.2rem;
+  text-align: center;
+  user-select: text;
+  &::selection {
+    background-color: #c962a0;
+  }
 `;
 const Img = styled.img`
   margin-bottom: 5%;
   /* margin-top: 5%; */
-  width: 400px;
+  width: 300px;
+  transition: width 0.5s;
+  @media (max-width: 853px) {
+    width: 200px;
+  }
 `;
 const H1 = styled.h1`
   font-size: 2.8rem;
+  text-align: center;
+  word-wrap: keep-all;
 `;
 
 function Home() {
@@ -33,8 +55,10 @@ function Home() {
   return (
     <HomeContainer id="home__container">
       <Img src={faceImg} alt="Imagen" />
-      <H1>FrontEnd Development</H1>
-      <DescriptionP className="text-center">{text.description}</DescriptionP>
+      <TextContainer>
+        <H1>FrontEnd Development</H1>
+        <DescriptionP className="text-center">{text.description}</DescriptionP>
+      </TextContainer>
     </HomeContainer>
   );
 }
