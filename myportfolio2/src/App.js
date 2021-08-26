@@ -11,6 +11,7 @@ import NavBar from "./Components/NavBar";
 import { LangProvider } from "./Context/LangContext";
 import { MenuProvider } from "./Context/MenuContext";
 import Projects from "./Pages/Projects";
+import Skills from "./Pages/Skills";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         </Switch>
       </Router>
       <Projects />
+      <Skills />
       {/* <Footer /> */}
     </LangProvider>
   );
