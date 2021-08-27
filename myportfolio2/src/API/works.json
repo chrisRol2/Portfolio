@@ -21,9 +21,9 @@
       "icon": "css3"
     },
     {
-      "id": 14,
-      "name": "Node",
-      "icon": "nodejs"
+      "id": 20,
+      "name": "Sass",
+      "icon": "sass"
     }
   ],
   "tools": [
@@ -41,6 +41,13 @@
       "id": 17,
       "name": "Docker",
       "icon": "docker"
+    }
+  ],
+  "none": [
+    {
+      "id": 14,
+      "name": "Node",
+      "icon": "nodejs"
     }
   ]
 }
