@@ -13,7 +13,7 @@ styles.navBar = {
   width: "100%",
   justifyContent: "center",
   boxShadow: "2px 1px 2px 1px rgba(0, 0, 0, 0.2)",
-  backgroundColor: "#ffffff50",
+  backgroundColor: "#ffffff80",
   backdropFilter: "blur(10px)",
   zIndex: "1",
 };
@@ -69,7 +69,7 @@ const Nav = styled.ul`
   width: 70%;
 `;
 const Links = styled(Nav)`
-  width: 50% !important;
+  width: 30% !important;
   @media (max-width: 853px) {
     display: none !important;
   }
@@ -86,7 +86,7 @@ function NavBar() {
         </LogoName>
         <Links>
           <Li style={styles.li}>{text.contact}</Li>
-          <Li style={styles.li}>{text.clients}</Li>
+          {/* <Li style={styles.li}>{text.clients}</Li> */}
           <Li style={styles.li}>{text.skills}</Li>
           <Li style={styles.li}>{text.projects}</Li>
           <Li onClick={() => window.scrollTo(0, 0)} style={styles.li}>
