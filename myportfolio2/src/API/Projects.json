@@ -2,7 +2,8 @@
   "Pes": [
     {
       "name": "Agencia Luma",
-      "description": "Aplicación de una sola página, Multi idioma y para agencia de marketing digital",
+      "description": "SPA",
+      "descriptionModal": "LandingPage SPA, desarrollada con ReactJs, styled-components, React Router Dom, con diseño moderno, responsive disign pensado para todo tipo de dispositivos del mercado. ",
       "url": "https://lot-tido.com",
       "img": "lumaLogo.png",
       "alt": "Alt"
@@ -10,6 +11,7 @@
     {
       "name": "Caja de herramientas Rolgus",
       "description": "Aplicación de una sola página, destinada a calcular coordenadas de minecraft, manejar usuarios(en desarrollo)",
+      "descriptionModal": "SPA, desarrollada con ReactJs, React Router Dom, fue mi primer proyecto, al cual le tengo mucho cariño, el cual aun esta en desarrollo, destinado a la creacion de mas calculadoras y sistema de usuarios",
       "url": "https://rolgus.com",
       "img": "rolgusLogo.png",
       "alt": "Alt"
@@ -17,29 +19,25 @@
     {
       "name": "Portafolio",
       "description": "Esta pagina donde estas, diseño moderno y minimalista, destinado a mostrar mis proyectos y ofrecer mis servicios",
+      "descriptionModal": "Es esta pagina donde estas, LandingPage SPA, con diseño moderno minimalista y responsive-disign, creada en ReactJs, styled-components, con el proposito de ofrecer mis servicios de desarrollo web front-end y mostrar mis  proyectos",
       "url": "https://chrisrol.xyz",
       "img": "miniaturaPortfolio.png",
-      "alt": "Alt"
-    },
-    {
-      "name": "Cronometro",
-      "description": "Cronometro temporizador para mantener sesiones de trabajo organizadas y sin distracciones!",
-      "url": "https://",
-      "img": "Cronometro.png",
       "alt": "Alt"
     }
   ],
   "Pen": [
     {
       "name": "Agencia Luma",
-      "description": "Aplicación de una sola página, Multi idioma y para agencia de marketing digital",
+      "description": "SPA",
+      "descriptionModal": "holas",
       "url": "https://lot-tido.com",
       "img": "lumaLogo.png",
       "alt": "Alt"
     },
     {
-      "name": "Caja de herramientas Rolgus",
-      "description": "Aplicación de una sola página, destinada a calcular coordenadas de minecraft, manejar usuarios(en desarrollo)",
+      "name": "ToolBox Rolgus",
+      "description": "SPA, destinada a calcular coordenadas de minecraft, manejar usuarios(en desarrollo)",
+      "descriptionModal": "holas",
       "url": "https://rolgus.com",
       "img": "rolgusLogo.png",
       "alt": "Alt"
@@ -47,15 +45,9 @@
     {
       "name": "Portafolio",
       "description": "Esta pagina donde estas, diseño moderno y minimalista, destinado a mostrar mis proyectos y ofrecer mis servicios",
+      "descriptionModal": "holas",
       "url": "https://chrisrol.xyz",
       "img": "miniaturaPortfolio.png",
-      "alt": "Alt"
-    },
-    {
-      "name": "Cronometro",
-      "description": "Cronometro temporizador para mantener sesiones de trabajo organizadas y sin distracciones!",
-      "url": "https://",
-      "img": "Cronometro.png",
       "alt": "Alt"
     }
   ],
@@ -65,6 +57,14 @@
       "description": "Mi primer portafolio :3",
       "url": "https://legacy.chrisrol.xyz",
       "img": "legacy.png",
+      "alt": "Alt"
+    },
+    {
+      "name": "Cronometro",
+      "description": "Cronometro temporizador para mantener sesiones de trabajo organizadas y sin distracciones!",
+      "url": "#",
+      "descriptionModal": "holas",
+      "img": "Cronometro.png",
       "alt": "Alt"
     }
   ]
