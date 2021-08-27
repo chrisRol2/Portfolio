@@ -28,7 +28,7 @@ li {
 *::-webkit-scrollbar-thumb {
   background: rgb(255, 255, 255);
   border-radius: 4px;
-  border: 1px solid #000;
+  border: 1px solid #cfcfcf;
 }
 *::-webkit-scrollbar-thumb:hover {
   background: #f7f7f7;
