@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Detector } from "../Helpers/NavigatorDetector";
+import ProjectModal from "../Components/ProjectModal";
 
 const Img = styled.img`
   width: 100%;
@@ -10,7 +11,9 @@ const Img = styled.img`
   transition: transform 0.8s;
 `;
 
-const MyProject = styled.a`
+const MyProject = styled.section`
+  position: relative;
+  cursor: pointer;
   padding: 0;
   min-height: 400px;
   max-height: 400px;
@@ -93,18 +96,29 @@ const DescriptionP = styled.p`
 
 function Project({ pText }) {
   const img = require(`../Images/Projects/${pText.img}`);
+  const [state, setState] = useState(false);
+  const handleClick = () => {
+    document.body.style.overflow = !state ? "hidden" : "visible";
+    setState(!state);
+  };
   return (
-    <MyProject href={pText.url} target="_blank">
+    <MyProject>
       <ImgProject>
         <Img async src={img.default} alt={pText.alt} />
       </ImgProject>
       <Aside>
-        <Hover>
-          <h2>Visit!</h2>
+        <Hover onClick={handleClick}>
+          <h2>More!</h2>
         </Hover>
         <Title>{pText.name}</Title>
         <DescriptionP>{pText.description}</DescriptionP>
       </Aside>
+      <ProjectModal
+        isOpen={state}
+        setModal={handleClick}
+        pText={pText}
+        Img={img.default}
+      />
     </MyProject>
   );
 }
