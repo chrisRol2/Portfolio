@@ -33,6 +33,10 @@ const DescriptionP = styled.p`
   user-select: text;
   &::selection {
     background-color: #c962a0;
+    border-radius: 20px;
+    color: white;
+    background: #121111;
+    text-shadow: 0px 0px 5px #fc7bc8;
   }
 `;
 const Img = styled.img`
