@@ -24,15 +24,15 @@ const MyProject = styled.section`
   flex-direction: column;
   background-color: #f6f6f6;
   transition: transform 0.5s;
-  border-radius: 20px;
+  border-radius: var(--borderRadius);
   @media (max-width: 375px) {
     width: 90%;
     height: 500px;
   }
 `;
 const ImgProject = styled.div`
-  border-radius: 20px 20px 0 0;
-  border-radius: 20px;
+  border-radius: var(--borderRadius) var(--borderRadius) 0 0;
+  /* border-radius: var(--borderRadius); */
   cursor: default;
   padding: 0;
   margin: 0;
@@ -58,11 +58,10 @@ const Hover = styled.div`
   height: 100%;
   width: 100%;
 
-  background-color: ${!Detector("firefox") ? "transparent" : "#ffffffda"};
   background-color: ${!Detector("firefox") ? "#eeeeee80" : "#ffffffda"};
   backdrop-filter: blur(3px);
 
-  border-radius: 50%;
+  border-radius: var(--borderRadius);
   transition: transform 0.5s, border-radius 0.5s;
   display: flex;
   justify-content: center;
@@ -78,7 +77,7 @@ const Aside = styled.aside`
   flex-grow: 1;
   &:hover ${Hover} {
     transform: scale(1);
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 var(--borderRadius) var(--borderRadius);
   }
 `;
 const Title = styled.h3`
@@ -99,6 +98,8 @@ function Project({ pText }) {
   const [state, setState] = useState(false);
   const handleClick = () => {
     document.body.style.overflow = !state ? "hidden" : "visible";
+    document.body.style.paddingRight = !state ? "var(--scrollBarW)" : "";
+    // document.body.style.position = !state ? "fixed" : "";
     setState(!state);
   };
   return (
