@@ -4,6 +4,7 @@ import "./Styles/menuButton.css";
 
 import LangContext from "../Context/LangContext.js";
 import logo from "../Images/MarcaColor.png";
+import ThemeContext from "../Context/ThemeContext";
 const styles = {};
 styles.navBar = {
   display: "flex",
@@ -74,9 +75,17 @@ const Links = styled(Nav)`
     display: none !important;
   }
 `;
+const ThemeSelector = styled(Li)`
+  &::after {
+    content: "${({ theme }) => (theme === "light" ? "🌝" : "🌚")}";
+  }
+`;
 function NavBar() {
-  const { text } = useContext(LangContext);
-
+  const { text, setLang, lang } = useContext(LangContext);
+  const { theme, changeTheme: setTheme } = useContext(ThemeContext);
+  const changeLanguage = () => setLang(lang === "en" ? "es" : "en");
+  const changeTheme = () => setTheme(theme === "dark" ? "light" : "dark");
+  console.log(theme);
   return (
     <nav style={styles.navBar}>
       <Nav>
@@ -85,13 +94,12 @@ function NavBar() {
           <H2>Chris Rol</H2>
         </LogoName>
         <Links>
-          <Li style={styles.li}>{text.contact}</Li>
-          {/* <Li style={styles.li}>{text.clients}</Li> */}
-          <Li style={styles.li}>{text.skills}</Li>
-          <Li style={styles.li}>{text.projects}</Li>
-          <Li onClick={() => window.scrollTo(0, 0)} style={styles.li}>
-            {text.about}
+          <Li style={styles.li} onClick={changeLanguage}>
+            {text.language}
           </Li>
+          <ThemeSelector style={styles.li} onClick={changeTheme}>
+            {text.theme}
+          </ThemeSelector>
         </Links>
         <MenuButton
           // onClick={handleMenuClick}
