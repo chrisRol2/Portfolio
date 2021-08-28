@@ -12,23 +12,26 @@ const Skills = styled.article`
   margin: 2% 2.5%;
   box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.3);
   background-color: #f6f6f6;
-  border-radius: 20px;
+  border-radius: var(--borderRadius);
+  /* transition: transform 0.5s; */
   @media (max-width: 853px) {
     flex-direction: column;
     max-height: 400px;
     width: 80%;
   }
+  &:hover {
+  }
 `;
 const Img = styled.img`
   /* border-radius: 20px; */
   /* top-left | top-right | bottom-right | bottom-left */
-  border-radius: 20px 0 0 20px;
+  border-radius: var(--borderRadius) 0 0 var(--borderRadius);
   width: 30%;
   object-fit: cover;
   object-position: -3rem center;
   @media (max-width: 853px) {
     /* top-left | top-right | bottom-right | bottom-left */
-    border-radius: 20px 20px 0 0;
+    border-radius: var(--borderRadius) var(--borderRadius) 0 0;
     height: 40%;
     width: 100%;
     object-position: center;
