@@ -1,3 +1,11 @@
+:root {
+  --scrollBarW: 10px;
+  --borderRadius: 10px;
+}
+
+body {
+  font-size: 20px;
+}
 * {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
@@ -17,7 +25,7 @@ li {
   list-style-type: none;
 }
 *::-webkit-scrollbar {
-  width: 10px;
+  width: var(--scrollBarW);
   height: 8px;
   border-radius: 8px;
 }
