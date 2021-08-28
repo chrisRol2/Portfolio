@@ -10,12 +10,14 @@ const ProjectModalContainer = styled.div`
   aspect-ratio: 16/10;
   background-color: white;
   box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.5);
-  border-radius: 20px;
+  border-radius: var(--borderRadius);
   transition: width 1s, height 1s;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: space-between;
+  transform: scale(${(props) => (props.isOpen ? 1 : 0)});
+  transition: transform 0.2s;
 
   position: relative;
   padding: 20px;
@@ -47,40 +49,48 @@ const TitleModal = styled(Title)`
   font-size: 2rem;
   margin: 0 0;
 `;
+const ImgModal = styled.img`
+  height: 50%;
+  aspect-ratio: 1 / 1;
+  align-self: center;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--borderRadius);
+  position: relative;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
+`;
 
+const MyDiv = styled.div`
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  transform: scale(${(props) => (props.isOpen ? 1 : 0)});
+  /* transition: transform 0.5s; */
+  opacity: ${(props) => (props.isOpen ? 1 : 0)};
+  z-index: 1;
+  background-color: ${!Detector("firefox")
+    ? (props) => (props.isOpen ? "#bbbbbb60" : "#ffffff00")
+    : "#ffffffda"};
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s;
+  cursor: default;
+`;
 function ProjectModal({ isOpen, setModal, pText, Img }) {
-  const MyDiv = styled.div`
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    left: 0;
-    transform: scale(${isOpen ? 1 : 0});
-    z-index: 1;
-    background-color: ${!Detector("firefox") ? "#55555590" : "#ffffffda"};
-    backdrop-filter: blur(5px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.5s;
-    cursor: default;
-  `;
   const close = () => {
     setModal(false);
   };
-  const ImgModal = styled.img`
-    height: 50%;
-    aspect-ratio: 1 / 1;
-    align-self: center;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 30px;
-    position: relative;
-    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.3);
-  `;
+
   return (
-    <MyDiv onClick={(e) => close(e)}>
-      <ProjectModalContainer onClick={(e) => e.stopPropagation()}>
+    <MyDiv isOpen={isOpen} onClick={(e) => close(e)}>
+      <ProjectModalContainer
+        isOpen={isOpen}
+        onClick={(e) => e.stopPropagation()}
+      >
         <TitleModal className="text-center">{pText.name}</TitleModal>
         <Exit onClick={close}>🏃🏼‍♂️</Exit>
         <p>{pText.descriptionModal}</p>
