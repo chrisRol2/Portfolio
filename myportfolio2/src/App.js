@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import { useEffect } from "react";
 //styles
-import "./App.css";
+import "./App.scss";
 //Pages
 import Home from "./Pages/Home";
 //Components
@@ -12,23 +12,32 @@ import { LangProvider } from "./Context/LangContext";
 import { MenuProvider } from "./Context/MenuContext";
 import Projects from "./Pages/Projects";
 import Skills from "./Pages/Skills";
+import Contact from "./Pages/Contact";
+import { MyThemeProvider } from "./Context/ThemeContext";
 
 function App() {
+  useEffect(() => {
+    // console.clear();
+    // console.log("Hola, andas buscando algo por aqui?");
+  });
   return (
-    <LangProvider>
-      <MenuProvider>
-        <NavBar />
-      </MenuProvider>
+    <MyThemeProvider>
+      <LangProvider>
+        <MenuProvider>
+          <NavBar />
+        </MenuProvider>
 
-      <Router>
-        <Switch>
-          <Route exact path="/" component={Home} />
-        </Switch>
-      </Router>
-      <Projects />
-      <Skills />
-      {/* <Footer /> */}
-    </LangProvider>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Home} />
+          </Switch>
+        </Router>
+        <Projects />
+        <Skills />
+        <Contact />
+        {/* <Footer /> */}
+      </LangProvider>
+    </MyThemeProvider>
   );
 }
 
