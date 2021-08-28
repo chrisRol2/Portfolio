@@ -9,6 +9,7 @@ const SkillContainer = styled.article`
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: space-around;
+  padding-bottom: 10rem;
 `;
 
 function Skills() {
