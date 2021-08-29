@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Detector } from "../Helpers/NavigatorDetector";
-import "./Styles/menuButton.css";
+import "./Styles/menuButton.scss";
 import Title from "./Title";
 
 const ProjectModalContainer = styled.div`

@@ -8,21 +8,24 @@ const Img = styled.img`
   height: 100%;
   object-fit: cover;
   object-position: center;
+  transform: scale(1.0001);
   transition: transform 0.8s;
 `;
 
 const MyProject = styled.section`
+  color: ${({ theme }) => theme.bgWColor};
+
   position: relative;
   cursor: pointer;
   padding: 0;
   min-height: 400px;
   max-height: 400px;
   aspect-ratio: 3/4;
-  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 3px 1px ${({ theme }) => theme.cardShadow};
   margin: 20px;
   display: flex;
   flex-direction: column;
-  background-color: #f6f6f6;
+  background-color: ${({ theme }) => theme.cardBgColor};
   transition: transform 0.5s;
   border-radius: var(--borderRadius);
   @media (max-width: 375px) {

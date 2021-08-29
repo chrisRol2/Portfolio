@@ -7,7 +7,7 @@ const Skills = styled.article`
   min-height: 300px;
   width: 500px;
   /* aspect-ratio: 5/3; */
-
+  color: ${({ theme }) => theme.bgWColor};
   flex-direction: row;
   margin: 2% 2.5%;
   box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.3);
@@ -28,7 +28,8 @@ const Img = styled.img`
   border-radius: var(--borderRadius) 0 0 var(--borderRadius);
   width: 30%;
   object-fit: cover;
-  object-position: -3rem center;
+  object-position: -3.1rem center;
+  transform: scale(1.01);
   @media (max-width: 853px) {
     /* top-left | top-right | bottom-right | bottom-left */
     border-radius: var(--borderRadius) var(--borderRadius) 0 0;
@@ -45,6 +46,7 @@ const SkillList = styled.ul`
   flex-wrap: wrap;
 `;
 const H2 = styled.h2`
+  /* color: inherit; */
   margin: 5px 20px;
   font-weight: 900;
   font-family: "Lato", sans-serif !important;

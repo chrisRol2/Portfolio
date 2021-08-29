@@ -3,43 +3,63 @@ import { ThemeProvider } from "styled-components";
 
 const ThemeContext = createContext();
 
-const sistemDefaultTheme = () =>
-  window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? dark
-    : light;
+const sistemDefaultTheme = () => {
+  return "light";
+  // return window.matchMedia &&
+  //   window.matchMedia("(prefers-color-scheme: dark)").matches
+  //   ? "dark"
+  //   : "light";
+};
 
 const MyThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(
     localStorage.getItem("theme")
-      ? JSON.parse(localStorage.getItem("theme"))
+      ? localStorage.getItem("theme")
       : sistemDefaultTheme
   );
+  const [themeObj, setThemeObj] = useState(theme === "dark" ? dark : light);
 
   const changeTheme = (data) => {
-    if (data === "light") setTheme(light);
-    else setTheme(dark);
+    if (data === "light") setTheme("light");
+    else setTheme("dark");
+    localStorage.setItem("theme", data);
   };
 
   const data = {
-    theme,
+    themeSel: theme,
     changeTheme,
+    theme: themeObj,
   };
 
   useEffect(() => {
-    localStorage.setItem("theme", JSON.stringify(theme));
+    setThemeObj(theme === "dark" ? dark : light);
   }, [theme]);
 
   return (
     <ThemeContext.Provider value={data}>
-      <ThemeProvider theme={theme}>{children}</ThemeProvider>
+      <ThemeProvider theme={themeObj}>{children}</ThemeProvider>
     </ThemeContext.Provider>
   );
 };
 const light = {
-    bgColor: "red",
+    navBg: "#ffffff80",
+    navShadow: "rgba(0, 0, 0, 0.2)",
+    fontColor: "#000",
+    bodyBg: "#ffffff",
+    bgWColor: "#000",
+    cardShadow: "rgba(0, 0, 0, 0.3)",
+    cardBgColor: "#f6f6f6",
   },
   dark = {
-    bgColor: "blue",
+    navBg: "#cccccc80",
+    navShadow: "rgba(0,0, 0, 0.0)",
+    fontColor: "#fff",
+    bodyBg: "#0F0F11",
+    bgWColor: "#000",
+    // cardShadow: "rgba(252, 123, 200, 0.3)",
+    cardShadow: "rgba(255,255, 255, 0.3)",
+    cardBgColor: "#f6f6f6",
+    // cardBgColor: "#eee",
   };
 
 export { MyThemeProvider };

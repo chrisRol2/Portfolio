@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
-import faceImg from "../Images/MarcaColor.png";
+import faceImg from "../Images/MarcaColor.5dd0be0a.png";
 import LanguageContext from "../Context/LangContext";
 
 const HomeContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5%;
   /* height: 100vh; */
   width: 90%;
   display: flex;
@@ -40,10 +41,12 @@ const DescriptionP = styled.p`
   }
 `;
 const Img = styled.img`
-  margin-bottom: 5%;
+  /* margin-bottom: 5%; */
   /* margin-top: 5%; */
-  width: 300px;
+  width: 320px;
+  height: auto;
   transition: width 0.5s;
+  border-radius: 50%;
   @media (max-width: 853px) {
     width: 200px;
   }
