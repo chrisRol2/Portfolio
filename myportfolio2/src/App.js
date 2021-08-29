@@ -14,17 +14,30 @@ import Projects from "./Pages/Projects";
 import Skills from "./Pages/Skills";
 import Contact from "./Pages/Contact";
 import { MyThemeProvider } from "./Context/ThemeContext";
+import { createGlobalStyle } from "styled-components";
+import MenuDesp from "./Components/MenuDesp";
+
+const GlobalStyles = createGlobalStyle`
+
+body {
+  color: ${({ theme }) => theme.fontColor} ;
+  background-color: ${({ theme }) => theme.bodyBg};
+  transition: color 0.5s, background-color 0.5s,box-shadow 0.5s;
+}
+`;
 
 function App() {
   useEffect(() => {
     // console.clear();
-    // console.log("Hola, andas buscando algo por aqui?");
+    console.log(<h2>hOLA</h2>);
   });
   return (
     <MyThemeProvider>
+      <GlobalStyles />
       <LangProvider>
         <MenuProvider>
           <NavBar />
+          <MenuDesp />
         </MenuProvider>
 
         <Router>
