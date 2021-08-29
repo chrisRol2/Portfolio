@@ -26,7 +26,7 @@
     "emailError": "Debe ser EMail valido",
     "theme": "Tema",
 
-    "description": "Inicie mi camino en el desarrollo hace 7 años, estuve en proyectos de IOT y fui lider en un  equipo de robotica, durante el 2020 aproveche mi tiempo para empaparme del mundo del desarrollo web, y empece la aventura de mi vida, convertirme en desarrollador FullStack, con una hoja de ruta moderna,U tilizo ReactJs y JavaScript vanilla para llevar a cabo mis proyectos. Nacido en Buenos Aires, pero habitante del planeta tierra. Creyente del trabajo en equipo, de ser autodidacta y de que todo es posible con esfuerzo y amor. Desarrollador como estilo de vida"
+    "description": "Inicie mi camino en el desarrollo hace 7 años, estuve en proyectos de IOT y fui lider en un  equipo de robotica, durante el 2020 aproveche mi tiempo para empaparme del mundo del desarrollo web, y empece la aventura de mi vida, convertirme en desarrollador FullStack, con una hoja de ruta moderna. Utilizo ReactJs y JavaScript vanilla para llevar a cabo mis proyectos. Nacido en Buenos Aires, pero habitante del planeta tierra. Creyente del trabajo en equipo, de ser autodidacta y de que todo es posible con esfuerzo y amor. Desarrollador como estilo de vida"
   },
   "en": {
     "talk": "Do you like what I do? We speak?",
@@ -50,7 +50,7 @@
     "contactMe": "Contact Me",
     "name": "Name",
     "message": "Message",
-    "send": "Send",
+    "send": "Submit",
     "visit": "Visit",
     "messageError": "The message must be at least 6 words",
     "nameError": "Enter name pease",
