@@ -1,8 +1,9 @@
-import React from "react";
 import ContactForm from "../Components/ContactForm";
 import styled from "styled-components";
 import { useContext } from "react";
 import LangContext from "../Context/LangContext.js";
+import SendFormModal from "../Components/SendFormModal";
+import { ContactFormProvider } from "../Context/ContactFormContext";
 
 const ContactContainer = styled.div`
   display: flex;
@@ -12,12 +13,13 @@ const ContactContainer = styled.div`
   align-items: center;
   height: 80vh;
   background: #e5e5e5;
+  position: relative;
   & p,
   & h2 {
     margin-top: 0.5rem;
     text-align: center;
   }
-  & h2 {
+  & > h2 {
     text-decoration: underline solid #147e92;
   }
 `;
@@ -34,7 +36,10 @@ function Contact() {
           <h2>{text.contact}</h2>
           <p>{text.talk}</p>
         </div>
-        <ContactForm />
+        <ContactFormProvider>
+          <ContactForm />
+          <SendFormModal />
+        </ContactFormProvider>
       </ContactContainer>
     </div>
   );
