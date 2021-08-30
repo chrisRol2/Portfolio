@@ -90,7 +90,6 @@ function NavBar() {
   const changeLanguage = () => setLang(lang === "en" ? "es" : "en");
   const changeTheme = () => setTheme(themeSel === "dark" ? "light" : "dark");
   const openMenu = () => MenuSetIsOpen(!MenuIsOpen);
-  // console.log({ });
   return (
     <NavFull>
       <Nav>

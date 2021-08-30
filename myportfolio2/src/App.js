@@ -29,7 +29,6 @@ body {
 function App() {
   useEffect(() => {
     // console.clear();
-    console.log(<h2>hOLA</h2>);
   });
   return (
     <MyThemeProvider>

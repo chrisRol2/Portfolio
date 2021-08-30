@@ -55,6 +55,8 @@ const H1 = styled.h1`
   font-size: 2.8rem;
   text-align: center;
   word-wrap: keep-all;
+  ${({ theme }) => theme.textShadow};
+  text-shadow: "text-shadow: 0px 0px 5px #fc7bc8";
 `;
 
 function Home() {

@@ -49,6 +49,7 @@ const light = {
     bgWColor: "#000",
     cardShadow: "rgba(0, 0, 0, 0.3)",
     cardBgColor: "#f6f6f6",
+    textShadow: "text-shadow: 0px 0px 0px #fc7bc8",
   },
   dark = {
     navBg: "#cccccc80",
@@ -59,6 +60,8 @@ const light = {
     // cardShadow: "rgba(252, 123, 200, 0.3)",
     cardShadow: "rgba(255,255, 255, 0.3)",
     cardBgColor: "#f6f6f6",
+    textShadow: "text-shadow: 0px 0px 5px #fc7bc8",
+
     // cardBgColor: "#eee",
   };
 
