@@ -11,16 +11,18 @@ const ProjectModalContainer = styled.div`
   background-color: white;
   box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.5);
   border-radius: var(--borderRadius);
-  transition: width 1s, height 1s;
+  transition: width 1s, height 1s, transform 0.5s, color 0.5s,
+    background-color 0.5s, box-shadow 0.5s;
+
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: space-between;
   transform: scale(${(props) => (props.isOpen ? 1 : 0)});
-  transition: transform 0.2s;
-
+  color: ${({ theme }) => theme.fontColor};
   position: relative;
   padding: 20px;
+  background-color: ${({ theme }) => theme.bodyBg};
   @media (max-width: 1008px) {
     width: 70%;
     height: 80%;
@@ -67,6 +69,7 @@ const MyDiv = styled.div`
   top: 0;
   left: 0;
   transform: scale(${(props) => (props.isOpen ? 1 : 0)});
+
   /* transition: transform 0.5s; */
   opacity: ${(props) => (props.isOpen ? 1 : 0)};
   z-index: 1;
@@ -79,6 +82,10 @@ const MyDiv = styled.div`
   align-items: center;
   transition: background-color 0.5s;
   cursor: default;
+  z-index: 2;
+  & a {
+    color: ${({ theme }) => theme.fontColor};
+  }
 `;
 function ProjectModal({ isOpen, setModal, pText, Img }) {
   const close = () => {

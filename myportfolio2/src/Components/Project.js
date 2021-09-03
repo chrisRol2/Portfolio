@@ -70,6 +70,10 @@ const Hover = styled.div`
   justify-content: center;
   align-items: center;
   transform: scale(1, 0);
+
+  & h2 {
+    ${({ theme }) => theme.textShadow}
+  }
 `;
 
 const Aside = styled.aside`

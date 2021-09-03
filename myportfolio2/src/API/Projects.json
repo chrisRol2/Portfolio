@@ -1,12 +1,38 @@
 {
+  "Pen": [
+    {
+      "name": "Agencia Luma",
+      "description": "Web SPA for a mobile-first digital marketing agency, designed to share the Luma Agency offers to the world",
+      "descriptionModal": "Landing Page SPA, developed with ReactJs, styled-components, React Router Dom, with a modern design, responsive design designed for all types of devices on the market. ",
+      "url": "https://lot-tido.com",
+      "img": "lumaLogo.png",
+      "alt": "Agencia Luma Logo"
+    },
+    {
+      "name": "Rolgus Toolbox",
+      "description": "SPA, intended to calculate minecraft coordinates, manage users (in development)",
+      "descriptionModal": "SPA, developed with ReactJs, React Router Dom, was my first project, which I have a lot of affection for, which is still in development, destined to the creation of more calculators and user systems",
+      "url": "https://rolgus.com",
+      "img": "rolgusLogo.png",
+      "alt": "Rolgus toolbox minecraft"
+    },
+    {
+      "name": "Portfolio",
+      "description": "This page where you are, modern and minimalist design, intended to show my projects and offer my services",
+      "descriptionModal": "It is this page where you are, LandingPage SPA, with a modern minimalist and responsive-design design, created in ReactJs, styled-components, with the purpose of offering my front-end web development services and showing my projects",
+      "url": "https://chrisrol.xyz",
+      "img": "miniaturaPortfolio.png",
+      "alt": "Chris Rol portfolio"
+    }
+  ],
   "Pes": [
     {
       "name": "Agencia Luma",
-      "description": "SPA",
+      "description": "Web SPA para una agencia de marketing digital, mobile-first, diseñada para compartir al mundo las ofertas de Agencia Luma",
       "descriptionModal": "LandingPage SPA, desarrollada con ReactJs, styled-components, React Router Dom, con diseño moderno, responsive disign pensado para todo tipo de dispositivos del mercado. ",
       "url": "https://lot-tido.com",
       "img": "lumaLogo.png",
-      "alt": "Alt"
+      "alt": "Agencia Luma Logo"
     },
     {
       "name": "Caja de herramientas Rolgus",
@@ -14,7 +40,7 @@
       "descriptionModal": "SPA, desarrollada con ReactJs, React Router Dom, fue mi primer proyecto, al cual le tengo mucho cariño, el cual aun esta en desarrollo, destinado a la creacion de mas calculadoras y sistema de usuarios",
       "url": "https://rolgus.com",
       "img": "rolgusLogo.png",
-      "alt": "Alt"
+      "alt": "Rolgus toolbox minecraft"
     },
     {
       "name": "Portafolio",
@@ -22,33 +48,7 @@
       "descriptionModal": "Es esta pagina donde estas, LandingPage SPA, con diseño moderno minimalista y responsive-disign, creada en ReactJs, styled-components, con el proposito de ofrecer mis servicios de desarrollo web front-end y mostrar mis  proyectos",
       "url": "https://chrisrol.xyz",
       "img": "miniaturaPortfolio.png",
-      "alt": "Alt"
-    }
-  ],
-  "Pen": [
-    {
-      "name": "Agencia Luma",
-      "description": "SPA",
-      "descriptionModal": "holas",
-      "url": "https://lot-tido.com",
-      "img": "lumaLogo.png",
-      "alt": "Alt"
-    },
-    {
-      "name": "ToolBox Rolgus",
-      "description": "SPA, destinada a calcular coordenadas de minecraft, manejar usuarios(en desarrollo)",
-      "descriptionModal": "holas",
-      "url": "https://rolgus.com",
-      "img": "rolgusLogo.png",
-      "alt": "Alt"
-    },
-    {
-      "name": "Portafolio",
-      "description": "Esta pagina donde estas, diseño moderno y minimalista, destinado a mostrar mis proyectos y ofrecer mis servicios",
-      "descriptionModal": "holas",
-      "url": "https://chrisrol.xyz",
-      "img": "miniaturaPortfolio.png",
-      "alt": "Alt"
+      "alt": "ChrisRol Portafolio"
     }
   ],
   "borradores": [

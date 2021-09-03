@@ -87,18 +87,21 @@ function NavBar() {
   const { text, setLang, lang } = useContext(LangContext);
   const { themeSel, changeTheme: setTheme } = useContext(ThemeContext);
   const { MenuIsOpen, MenuSetIsOpen } = useContext(MenuContext);
-  const changeLanguage = () => setLang(lang === "en" ? "es" : "en");
+  const changeLanguage = (e) => {
+    e.stopPropagation();
+    setLang(lang === "en" ? "es" : "en");
+  };
   const changeTheme = () => setTheme(themeSel === "dark" ? "light" : "dark");
   const openMenu = () => MenuSetIsOpen(!MenuIsOpen);
   return (
-    <NavFull>
+    <NavFull id="nav-full" onClick={(e) => e.stopPropagation()}>
       <Nav>
         <LogoName>
           <img src={logo} alt="logo" style={styles.logo} />
           <H2>Chris Rol</H2>
         </LogoName>
         <Links>
-          <Li style={styles.li} onClick={changeLanguage}>
+          <Li style={styles.li} onClick={(e) => changeLanguage(e)}>
             {text.language}
           </Li>
           <ThemeSelector

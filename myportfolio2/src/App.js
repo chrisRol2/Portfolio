@@ -24,6 +24,7 @@ body {
   background-color: ${({ theme }) => theme.bodyBg};
   transition: color 0.5s, background-color 0.5s,box-shadow 0.5s;
 }
+
 `;
 
 function App() {
