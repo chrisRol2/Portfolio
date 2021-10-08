@@ -1,4 +1,3 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useEffect } from "react";
 //styles
 import "./App.scss";
@@ -40,11 +39,7 @@ function App() {
           <MenuDesp />
         </MenuProvider>
 
-        <Router>
-          <Switch>
-            <Route exact path="/" component={Home} />
-          </Switch>
-        </Router>
+        <Home />
         <Projects />
         <Skills />
         <Contact />
