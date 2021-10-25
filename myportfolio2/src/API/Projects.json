@@ -49,6 +49,14 @@
       "url": "https://chrisrol.xyz",
       "img": "miniaturaPortfolio.png",
       "alt": "ChrisRol Portafolio"
+    },
+    {
+      "name": "Fat-Publicity",
+      "description": "Esta pagina donde estas, diseño moderno y minimalista, destinado a mostrar servicios de Fat publicity",
+      "descriptionModal": "Es esta pagina donde estas, LandingPage SPA, con diseño moderno minimalista y responsive-disign, creada en ReactJs, styled-components, con el proposito de ofrecer mis servicios de desarrollo web front-end y mostrar mis  proyectos",
+      "url": "https://dev.fatpublicity.chrisrol.xyz",
+      "img": "miniaturaFat.png",
+      "alt": "fat-publicit"
     }
   ],
   "borradores": [

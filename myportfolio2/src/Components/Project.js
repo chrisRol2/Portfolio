@@ -45,7 +45,7 @@ const ImgProject = styled.div`
   height: 65%;
   overflow: hidden;
   /* aspect-ratio: 1/1; */
-  background-color: #0a0a0c;
+  background-color: #fff;
   flex-grow: 1;
   &:hover ${Img} {
     transform: scale(1.1);
