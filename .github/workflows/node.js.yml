@@ -36,4 +36,4 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local_dir: "./build"
         delete: "false"
-        remote_dir: "/domains/chrisrol.xyz/public_html/public_html"
+        remote_dir: "/domains/chrisrol.xyz/public_html"
