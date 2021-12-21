@@ -3,51 +3,81 @@
     {
       "id": 10,
       "name": "React",
-      "icon": "react"
+      "icon": "bxl-react"
     },
     {
       "id": 11,
       "name": "JavaScript",
-      "icon": "javascript"
+      "icon": "bxl-javascript"
     },
     {
       "id": 12,
       "name": "HTML 5",
-      "icon": "html5"
+      "icon": "bxl-html5"
     },
     {
       "id": 13,
       "name": "CSS 3",
-      "icon": "css3"
+      "icon": "bxl-css3"
     },
     {
       "id": 20,
       "name": "Sass",
-      "icon": "sass"
+      "icon": "bxl-sass"
     }
   ],
   "tools": [
     {
       "id": 15,
       "name": "Git/GitHub",
-      "icon": "git"
+      "icon": "bxl-git"
     },
     {
       "id": 16,
       "name": "Figma",
-      "icon": "figma"
+      "icon": "bxl-figma"
     },
     {
       "id": 17,
       "name": "Docker",
-      "icon": "docker"
+      "icon": "bxl-docker"
+    },
+    {
+      "id": 18,
+      "name": "Kubernetes",
+      "icon": "bxl-kubernetes"
+    },
+    {
+      "id": 21,
+      "name": "CI/CD",
+      "icon": "bx-infinite"
     }
   ],
-  "none": [
+  "tecno2": [
+    {
+      "id": 24,
+      "name": "MySQL",
+      "icon": "bxs-data"
+    },
     {
       "id": 14,
       "name": "Node",
-      "icon": "nodejs"
+      "icon": "bxl-nodejs"
+    },
+    {
+      "id": 23,
+      "name": "Jest",
+      "icon": "bx-test-tube"
+    },
+    {
+      "id": 90,
+      "name": "GitHub Actions",
+      "icon": "bxl-github"
+    },
+    {
+      "id": 90,
+      "name": "Python",
+      "icon": "bxl-python"
     }
   ]
 }
