@@ -73,7 +73,7 @@ function SkillCard({ value }) {
               key={skill.name + 50}
             >
               <i
-                className={`bx bxl-${skill.icon}`}
+                className={`bx ${skill.icon}`}
                 style={{ fontSize: "2rem" }}
                 key={skill.name + 2}
               />
