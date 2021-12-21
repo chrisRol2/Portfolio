@@ -1,7 +1,7 @@
 import Title from "../Components/Title";
 import React, { useContext } from "react";
 import LanguageContext from "../Context/LangContext";
-import { tecno, tools } from "../API/works.json";
+import { tecno, tools, tecno2 } from "../API/works.json";
 import SkillCard from "../Components/SkillList";
 import styled from "styled-components";
 const SkillContainer = styled.article`
@@ -20,6 +20,7 @@ function Skills() {
       <SkillContainer>
         <SkillCard type="Lenguages" value={tecno} />
         <SkillCard type="Tools" value={tools} />
+        <SkillCard type="Tools" value={tecno2} />
       </SkillContainer>
     </div>
   );
