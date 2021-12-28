@@ -83,7 +83,7 @@ function Home() {
     <HomeContainer id="home__container">
       <Img src={faceImg} alt="Imagen" />
       <TextContainer>
-        <H1>FrontEnd Development</H1>
+        <H1>Web Developer</H1>
         <DescriptionP className="text-center">{text.description}</DescriptionP>
         <HomeLinks>
           <a
