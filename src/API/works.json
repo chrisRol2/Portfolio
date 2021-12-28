@@ -37,6 +37,7 @@
       "name": "Figma",
       "icon": "bxl-figma"
     },
+
     {
       "id": 17,
       "name": "Docker",
@@ -60,8 +61,13 @@
       "icon": "bxs-data"
     },
     {
+      "id": 24,
+      "name": "MongoDB",
+      "icon": "bxs-data"
+    },
+    {
       "id": 14,
-      "name": "Node",
+      "name": "NodeJs",
       "icon": "bxl-nodejs"
     },
     {
