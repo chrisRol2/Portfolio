@@ -3,10 +3,11 @@ import styled from "styled-components";
 import { Detector } from "../Helpers/NavigatorDetector";
 import "./Styles/menuButton.scss";
 import Title from "./Title";
-
+// 1174 x 657
 const ProjectModalContainer = styled.div`
-  width: 50%;
+  width: 70%;
   min-height: 60%;
+  max-height: 95%;
   aspect-ratio: 16/10;
   background-color: white;
   box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.5);
@@ -52,11 +53,13 @@ const TitleModal = styled(Title)`
   margin: 0 0;
 `;
 const ImgModal = styled.img`
-  height: 50%;
-  aspect-ratio: 1 / 1;
+  max-height: 60%;
+  max-width: 95%;
+
+  aspect-ratio: 16 / 9;
   align-self: center;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
   border-radius: var(--borderRadius);
   position: relative;
   box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);

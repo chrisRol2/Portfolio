@@ -102,6 +102,8 @@ const DescriptionP = styled.p`
 
 function Project({ pText }) {
   const img = require(`../Images/Projects/${pText.img}`);
+  // 1174 x 657
+  const thumbnail = require(`../Images/Projects/thumbnails/${pText.thumbnail}`);
   const [state, setState] = useState(false);
   const handleClick = () => {
     document.body.style.overflow = !state ? "hidden" : "visible";
@@ -125,7 +127,7 @@ function Project({ pText }) {
         isOpen={state}
         setModal={handleClick}
         pText={pText}
-        Img={img.default}
+        Img={thumbnail.default}
       />
     </MyProject>
   );
