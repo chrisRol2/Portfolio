@@ -20,7 +20,7 @@ function Projects() {
   return (
     <ProjectsContainer>
       <Title> {text.projects}</Title>
-      {pText.map((project) => (
+      {pText?.map((project) => (
         <Project key={project.name} pText={project} />
       ))}
     </ProjectsContainer>

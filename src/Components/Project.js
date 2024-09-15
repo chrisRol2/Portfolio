@@ -11,7 +11,6 @@ const Img = styled.img`
   transform: scale(1.0001);
   transition: transform 0.8s;
 `;
-
 const MyProject = styled.section`
   color: ${({ theme }) => theme.bgWColor};
 
@@ -51,7 +50,6 @@ const ImgProject = styled.div`
     transform: scale(1.1);
   }
 `;
-
 const Hover = styled.div`
   transform: scale(0);
   position: absolute;
@@ -75,7 +73,6 @@ const Hover = styled.div`
     ${({ theme }) => theme.textShadow}
   }
 `;
-
 const Aside = styled.aside`
   padding: 10px;
   height: 35%;
@@ -102,17 +99,18 @@ const DescriptionP = styled.p`
 
 function Project({ pText }) {
   const img = require(`../Images/Projects/${pText.img}`);
+  console.log(img);
+
   const [state, setState] = useState(false);
   const handleClick = () => {
     document.body.style.overflow = !state ? "hidden" : "visible";
     document.body.style.paddingRight = !state ? "var(--scrollBarW)" : "";
-    // document.body.style.position = !state ? "fixed" : "";
     setState(!state);
   };
   return (
     <MyProject>
       <ImgProject>
-        <Img async src={img.default} alt={pText.alt} />
+        <Img async src={img} alt={pText.alt} />
       </ImgProject>
       <Aside>
         <Hover onClick={handleClick}>
