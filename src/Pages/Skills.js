@@ -1,9 +1,13 @@
 import Title from "../Components/Title";
 import React, { useContext } from "react";
 import LanguageContext from "../Context/LangContext";
-import { tecno, tools, tecno2 } from "../API/works.json";
+import works from "../API/works.json";
 import SkillCard from "../Components/SkillList";
 import styled from "styled-components";
+const tecno = works.tecno;
+const tools = works.tools;
+const tecno2 = works.tecno2;
+
 const SkillContainer = styled.article`
   display: flex;
   flex-wrap: wrap;

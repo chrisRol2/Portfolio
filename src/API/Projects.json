@@ -31,14 +31,12 @@
       "alt": "Chris Rol portfolio"
     },
     {
-      "name": "Rolgus Toolbox",
-      "description": "SPA, intended to calculate minecraft coordinates, manage users (in development)",
-      "descriptionModal": "SPA, developed with ReactJs, React Router Dom, was my first project, which I have a lot of affection for, which is still in development, destined to the creation of more calculators and user systems",
-      "url": "https://rolgus.com",
-      "img": "rolgusLogo.png",
-      "thumbnail": "rolgusTB.png",
-
-      "alt": "Rolgus toolbox minecraft"
+      "name": "Fat-Publicity",
+      "description": "Esta pagina donde estas, diseño moderno y minimalista, destinado a mostrar servicios de Fat publicity",
+      "descriptionModal": "Es esta pagina donde estas, LandingPage SPA, con diseño moderno minimalista y responsive-disign, creada en ReactJs, styled-components, con el proposito de ofrecer mis servicios de desarrollo web front-end y mostrar mis  proyectos",
+      "url": "https://fatpublicity.com.ar",
+      "img": "miniaturaFat.png",
+      "alt": "fat-publicit"
     }
   ],
   "Pes": [
@@ -79,8 +77,8 @@
       "url": "https://rolgus.com",
       "img": "rolgusLogo.png",
       "thumbnail": "lumaTB.png",
-
       "alt": "Rolgus toolbox minecraft"
+
     }
   ],
   "borradores": [

@@ -1,6 +1,10 @@
 import { useState, createContext, useEffect } from "react";
-import { es, en } from "../API/lang.json";
-import { Pes, Pen } from "../API/Projects.json";
+import lang from "../API/lang.json";
+import projects from "../API/Projects.json";
+const Pes = projects.Pes;
+const Pen = projects.Pen;
+const es = lang.es;
+const en = lang.en;
 
 const LanguageContext = createContext();
 
